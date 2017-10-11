@@ -10,7 +10,16 @@
         body, html, section, .shower.full {
             background: #fff;
             overflow: inherit;
-            font-family: monospace, "Lucida Console";
+            color: #333;
+        }
+
+        .slide a {
+            color: #333;
+            background: none;
+        }
+
+        .slide a:hover {
+            color: #3f82c2;
         }
     </style>
 </head>
@@ -21,10 +30,16 @@
     <p>Авторы: Митрофанова Ирина и Михаил Шатихин</p>
     <p>
         <script>
-            document.write(new Date(2017, 8, 21));
+            document.write(new Date(2017, 9, 12));
         </script>
     </p>
 </header>
+
+<section class="slide white">
+    <h2 class="shout">
+        Новости
+    </h2>
+</section>
 
 <section class="slide white">
     <img src="images/12.jpg" class="cover"/>
@@ -34,32 +49,33 @@
     <h2 class="shout">Спасибо</h2>
 </section>
 
+
 <section class="slide white">
     <h2>Ссылки</h2>
     <ul>
+        <li>
+            <a target="_blank" href="https://github.com/lerna/lerna">
+                Lerna
+            </a>
+        </li>
         <li>
             <a target="_blank" href="https://blogs.msdn.microsoft.com/typescript/2017/10/02/typescript-turns-5/">
                 TypeScript Turns 5
             </a>
         </li>
         <li>
-            <a target="_blank" href="https://netbasal.com/create-and-test-decorators-in-javascript-85e8d5cf879c">
-                Create And Test Decorators in JavaScript
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="https://github.com/lerna/lerna">
-                lerna
-            </a>
-        </li>
-        <li>
             <a target="_blank" href="https://www.w3.org/TR/2017/REC-html51-20171003/">
-                w3.org/TR/2017/REC-html51-20171003
+                HTML 5.1 2nd Edition
             </a>
         </li>
         <li>
             <a target="_blank" href="https://github.com/mbeaudru/modern-js-cheatsheet">
-                https://github.com/mbeaudru/modern-js-cheatsheet
+                Cheatsheet for the JavaScript
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://netbasal.com/create-and-test-decorators-in-javascript-85e8d5cf879c">
+                Create And Test Decorators in JavaScript
             </a>
         </li>
     </ul>
@@ -69,8 +85,8 @@
     <h2>Ссылки</h2>
     <ul>
         <li>
-            <a target="_blank" href="https://github.com/Shopify/draggable">
-                https://github.com/Shopify/draggable
+            <a target="_blank" href="https://emberjs.com/blog/2017/10/03/the-road-to-ember-3-0.html">
+                The Road to Ember 3.0
             </a>
         </li>
         <li>
@@ -80,13 +96,13 @@
             </a>
         </li>
         <li>
-            <a target="_blank" href="https://emberjs.com/blog/2017/10/03/the-road-to-ember-3-0.html">
-                The Road to Ember 3.0
+            <a target="_blank" href="https://github.com/Shopify/draggable">
+                Draggable
             </a>
         </li>
         <li>
             <a target="_blank" href="https://github.com/strudeljs/strudel">
-                strudel
+                Strudel
             </a>
         </li>
     </ul>
@@ -97,15 +113,25 @@
     <h2>Code Quality Checker</h2>
     <ul>
         <li>
-            <a target="_blank" href="https://github.com/xcatliu/cqc">
-                Code Quality Checker
-            </a>
+            css, less, scss
+        </li>
+        <li>
+            js, jsx, vue
         </li>
     </ul>
+    <ul>
+        <li>
+            cqc src/**/*.js
+        </li>
+    </ul>
+    <img src="images/cqc.PNG" width="550" class="place right"/>
+    <a target="_blank" href="https://github.com/xcatliu/cqc">
+        Читать
+    </a>
 </section>
 
 <section class="slide white">
-    <h2>Browzzers</h2>
+    <h2>Browzzzers</h2>
     <ul>
         <li>
             <a target="_blank"
@@ -120,49 +146,60 @@
         </li>
         <li>
             <a target="_blank" href="https://www.youtube.com/watch?v=FOQptyz_hxg">
-                https://www.youtube.com/watch?v=FOQptyz_hxg
+                Modern DevTools
             </a>
         </li>
     </ul>
 </section>
 
 <section class="slide white">
-    <h2>React</h2>
+    <h2>JS library for building UI</h2>
     <ul>
         <li>
+            <a target="_blank"
+               href="https://blog.discordapp.com/lessons-from-migrating-a-large-codebase-to-react-16-e60e49102aa6">
+                Lessons from migrating a large codebase to 16 version
+            </a>
+        </li>
+        <li>
             <a target="_blank" href="https://medium.freecodecamp.org/8-key-react-component-decisions-cc965db11594">
-                8 Key React Component Decisions
+                8 Key Component Decisions
             </a>
         </li>
         <li>
             <a target="_blank" href="https://medium.com/ecmastack/what-you-need-to-know-about-react-16-a4e216522041">
-                About React 16
+                About 16 version
             </a>
         </li>
         <li>
             <a target="_blank"
                href="https://code.facebook.com/posts/300798627056246/relicensing-react-jest-flow-and-immutable-js/">
-                Relicensing React, Jest, Flow, and Immutable.js
-            </a>
-        </li>
-        <li>
-            <a target="_blank"
-               href="https://blog.discordapp.com/lessons-from-migrating-a-large-codebase-to-react-16-e60e49102aa6">
-                Lessons from migrating a large codebase to React 16
+                Relicensing
             </a>
         </li>
     </ul>
 </section>
 
 <section class="slide white">
-    <h2>falcor</h2>
+    <h2>Falcor</h2>
     <ul>
         <li>
-            <a target="_blank" href="http://netflix.github.io/falcor/">
-                http://netflix.github.io/falcor/
-            </a>
+            One Model Everywhere
+        </li>
+        <li>
+            The Data is the API
+        </li>
+        <li>
+            Bind to the Cloud
         </li>
     </ul>
+    <a target="_blank" href="http://netflix.github.io/falcor/">
+        Читать
+    </a>
+</section>
+
+<section class="slide white">
+    <img src="images/giphy.gif" class="cover"/>
 </section>
 
 <!--
